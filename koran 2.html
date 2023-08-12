@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tampilan Koran</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  .marquee {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .headline {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+  }
+  .headline img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.1);
+  }
+  .article {
+    margin: 20px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .article h3 {
+    color: #555;
+    font-size: 18px;
+  }
+  .article p {
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+  }
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+</style>
+<script>
+  function playVideo(videoId) {
+    var video = document.getElementById(videoId);
+    video.style.display = "block";
+    video.play();
+  }
+
+  // ... (Your other scripting) ...
+
+  function hideVideo(videoId) {
+    var video = document.getElementById(videoId);
+    video.style.display = "none";
+  }
+</script>
+</head>
+<body>
+  <div class="header">
+    <h1>Kabar Bintang BTJ</h1>
+    <marquee class="marquee" behavior="scroll" direction="left">
+      Tanggal Terbit: 10 Agustus 2023
+    </marquee>
+  </div>
+  <div class="headline">
+    <h2>Bintang BTJ FC taklukkan Meuraxa FC 3-1</h2>
+    <p>Hanafi (bg pitung) 1 gol, Khalid Abu Unaisah 2 gol</p>
+    <img src="PHOTO-2023-08-09-17-19-03.jpg" alt="Gambar Utama" style="max-width: 100%; height: auto;">
+  </div>
+  <div class="article">
+    <p>
+      Bintang BTJ FC kembali memakan korban. Meuraxa FC harus mengakui ketangguhan para punggawa Bintang BTJ FC yang pada sore ini tidak diperkuat oleh beberapa pemain kunci mereka, seperti yahcek dan Roma Herkules.
+    </p>
+    <p>
+      Bintang BTJ FC sempat tertinggal terlebih dahulu melalui serangan balik cepat anak-anak Meuraxa FC. Bisa dilihat dalam tayangan ulang berikut ini:
+    </p>
+    <video id="video1" style="display: none;" controls onended="hideVideo('video1')">
+      <source src="Gol meuraxa.mp4" type="video/mp4">
+      Browser Anda tidak mendukung tag video.
+    </video>
+    <button onclick="playVideo('video1')">Klik disini untuk menonton video</button>
+    <p>
+      Namun keunggulan tersebut tidak berlangsung lama. Hanafi atau yang biasa disapa bg pitung berhasil menyamakan kedudukan menjadi 1-1 setelah tendangan firstimenya tidak mampu ditahan oleh kiper Meuraxa. Tapi sayangnya, kameramen tidak meliput kejadian tersebut.
+    </p>
+    <p>
+      Dibabak kedua, Khalid yang menjadi "Man Of The Match" pada pertandingan kali ini, berhasil membuat Bintang BTJ unggul, setelah memanfaatkan bola rebound dari tendangan bebas Yah Wa yang gagal diantisipasi dengan baik oleh kiper Meuraxa FC.
+    </p>
+    <video id="video2" style="display: none;" controls onended="hideVideo('video2')">
+      <source src="Gol abu unaisah.mp4" type="video/mp4">
+      Browser Anda tidak mendukung tag video.
+    </video>
+    <button onclick="playVideo('video2')">Klik disini untuk menonton video</button>
+    <p>
+      Khalid akhirnya menyudahi perlawanan Meuraxa FC dengan mencetak gol beberapa menit menjelang akhir pertandingan. Khalid mencetak gol ketiga bagi Bintang BTJ FC setelah mendapatkan umpan terobosan dari salah satu pemain bawah Bintang BTJ, sehingga merubah skor menjadi 3-1.
+    </p>
+    <p>
+      Kesuksesan Bintang BTJ FC dalam pertandingan ini tentunya memberikan kebanggaan bagi para pendukungnya. Meskipun beberapa pemain kunci absen, tim berhasil mengatasi tantangan dan meraih kemenangan. Para pemain dan pelatih Bintang BTJ FC kini berada di puncak semangat dan siap menghadapi pertandingan berikutnya dengan keyakinan penuh.
+    </p>
+    <p>
+      Tetap pantau berita kami untuk informasi terkini seputar dunia sepak bola dan prestasi tim favorit Anda. Kami akan terus memberikan liputan lengkap tentang setiap pertandingan dan peristiwa menarik lainnya.
+    </p>
+  </div>
+  <div class="footer">
+    <p>Hak Cipta © 2023 Koran XYZ</p>
+  </div>
+</body>
+</html>
